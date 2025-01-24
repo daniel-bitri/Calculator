@@ -57,8 +57,8 @@ class CalculatorTest {
     }
     @Test
     void square(){
-        assertEquals(4.0, calculator.wurzel(2.0), "square of 2 is 4");
-        assertEquals(9.0, calculator.wurzel(3.0), 0.0, "square 3 is 9");
+        assertEquals(4.0, calculator.square(2.0), "square of 2 is 4");
+        assertEquals(9.0, calculator.square(3.0),  "square 3 is 9");
 
     }
 }
