@@ -27,4 +27,10 @@ public class Calculator {
         return a*a;
 
     }
+    public double sin(double a) {
+        return Math.sin(a);
+    }
+    public double cos(double a) {
+        return Math.cos(a);
+    }
 }

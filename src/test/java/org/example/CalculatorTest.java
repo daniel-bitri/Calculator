@@ -61,4 +61,15 @@ class CalculatorTest {
         assertEquals(9.0, calculator.square(3.0),  "square 3 is 9");
 
     }
+    @Test
+    void sin() {
+        assertEquals(0.0, calculator.sin(0.0), 0.0001, "Sin of 0 should be 0");
+        assertEquals(Math.sin(Math.PI / 2), calculator.sin(Math.PI / 2), 0.0001, "Sin of 90 degrees (π/2) should be 1");
+    }
+    @Test
+    void cos() {
+        assertEquals(1.0, calculator.cos(0.0), 0.0001, "Cos of 0 should be 1");
+        assertEquals(Math.cos(Math.PI), calculator.cos(Math.PI), 0.0001, "Cos of 180 degrees (π) should be -1");
+    }
+
 }
