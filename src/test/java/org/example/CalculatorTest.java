@@ -71,5 +71,11 @@ class CalculatorTest {
         assertEquals(1.0, calculator.cos(0.0), 0.0001, "Cos of 0 should be 1");
         assertEquals(Math.cos(Math.PI), calculator.cos(Math.PI), 0.0001, "Cos of 180 degrees (π) should be -1");
     }
-
+    @Test
+    void binar() {
+        assertEquals("1010", calculator.binar(10), "Binary representation of 10 should be 1010");
+        assertEquals("1111", calculator.binar(15), "Binary representation of 15 should be 1111");
+        assertEquals("0", calculator.binar(0), "Binary representation of 0 should be 0");
+        assertEquals("1011", calculator.binar(11), "Binary representation of 11 should be 1011");
+    }
 }

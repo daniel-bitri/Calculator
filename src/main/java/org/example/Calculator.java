@@ -33,4 +33,7 @@ public class Calculator {
     public double cos(double a) {
         return Math.cos(a);
     }
+    public String binar(int a) {
+        return Integer.toBinaryString(a);
+    }
 }
