@@ -55,4 +55,10 @@ class CalculatorTest {
         assertEquals(0.0, calculator.wurzel(0.0), 0.0, "wurzel with 0 as basis doesnt exist");
 
     }
+    @Test
+    void square(){
+        assertEquals(4.0, calculator.square(2.0), "square of 2 is 4");
+        assertEquals(9.0, calculator.square(3.0),  "square 3 is 9");
+
+    }
 }

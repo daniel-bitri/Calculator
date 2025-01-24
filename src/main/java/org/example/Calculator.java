@@ -23,4 +23,8 @@ public class Calculator {
     public double wurzel (double a){
         return Math.sqrt(a);
     }
+    public double square (double a){
+        return a*a;
+
+    }
 }
