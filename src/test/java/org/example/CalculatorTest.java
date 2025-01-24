@@ -3,6 +3,7 @@ package org.example;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import static java.lang.Float.NaN;
 import static org.junit.jupiter.api.Assertions.*;
 
 class CalculatorTest {
@@ -50,7 +51,7 @@ class CalculatorTest {
     }
     @Test
     void wurzel (){
-        assertEquals(0.0, calculator.wurzel(-9.0), 3.0, "Wurzel test failed you cannot do square root of negative numbers");
+        assertEquals(NaN, calculator.wurzel(-9.0), "Wurzel test failed you cannot do square root of negative numbers");
         assertEquals(0.0, calculator.wurzel(0.0), 0.0, "wurzel with 0 as basis doesnt exist");
 
     }
