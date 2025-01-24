@@ -20,4 +20,7 @@ public class Calculator {
         }
         return a / b;
     }
+    public double wurzel (double a){
+        return Math.sqrt(a);
+    }
 }
