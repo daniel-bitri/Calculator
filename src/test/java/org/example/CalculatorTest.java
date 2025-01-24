@@ -48,4 +48,10 @@ class CalculatorTest {
                 "Expected division by zero to throw an exception");
         assertEquals("Division by zero is not allowed.", exception.getMessage());
     }
+    @Test
+    void wurzel (){
+        assertEquals(0.0, calculator.wurzel(-9.0), 3.0, "Wurzel test failed you cannot do square root of negative numbers");
+        assertEquals(0.0, calculator.wurzel(0.0), 0.0, "wurzel with 0 as basis doesnt exist");
+
+    }
 }
